@@ -62,7 +62,7 @@ html, body, section, .page {
   transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   -webkit-transition: all 1s cubic-bezier(.5, -0.005, 0.2, 1) !important;
   color: #fff;
-  background: #374046;
+  background: hsla(0, 92%, 0%, 0.98);
 }
 
 section {
@@ -82,25 +82,25 @@ section {
 
 #p2 {
   left: 100%;
-  background: #FF5722;
+  background: hsla(0, 92%, 3%, 0.99);
   border-left: 1px dashed white;
 }
 
 #p3 {
   left: 200%;
-  background: #593C1F;
+  background: hsla(0, 92%, 6%, .99);
   border-left: 1px dashed white;
 }
 
 #p4 {
   left: 300%;
-  background: deeppink;
+  background: hsla(0, 92%, 9%, 0.99);
   border-left: 1px dashed white;
 }
 
 #p5 {
   left: 400%;
-  background: red;
+  background: hsla(0, 92%, 12%, 1);
   border-left: 1px dashed white;
 }
 
