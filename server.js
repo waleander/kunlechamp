@@ -2,7 +2,11 @@
 
 const Hapi = require('hapi');
 
-var server = new Hapi.Server(~~process.env.PORT || 4000, '0.0.0.0');
+const server = new Hapi.Server();
+server.connection({
+    port: parseInt(process.env.PORT, 10) || 3000,
+    host: '0.0.0.0'
+});
 server.bind({
   apiBaseUrl: 'http://localhost:4000/api',
   WebBaseUrl: 'http://localhost:4000'
