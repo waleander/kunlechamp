@@ -3,99 +3,239 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/jquery-ui-min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="/style/bootstrap.min.css">
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="stylesheet" href="/style/jquery-ui-min.css">
+  <script src="script/jquery-3.2.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
   <title>Way of a champ</title>
+  <script type="text/javascript">
+    $(function () {
+      // Animate loader off screen
+      $(".loading-page").fadeOut("slow");
+    });
+  </script>
 </head>
 
-<body>
+<body id="container">
+  <div class="loading-page"></div>
+  </div>
   <div class="ct" id="t1">
     <div class="ct" id="t2">
       <div class="ct" id="t3">
         <div class="ct" id="t4">
-          <div class="ct" id="t5">
-            <section>
-              <div class="side-nav">
-                <ul>
+          <section>
+            <div class="side-nav">
+              <!-- <div class="martial-art">
+                  <a href=""><img src="/image/logo.png" alt=""/></a>
+                </div> -->
+              <div class="inner-side">
+                <ul class="sidebar-link shadow">
                   <a href="#t1">
-                    <li class="icon fa fa-home" id="uno">Home</li>
+                    <li class="tablink icon fa fa-home" id="one">Home</li>
                   </a>
                   <a href="#t2">
-                    <li class="icon fa fa-keyboard-o" id="dos">Gallery</li>
+                    <li class="tablink icon fa fa-coffee" id="two">About</li>
                   </a>
                   <a href="#t3">
-                    <li class="icon fa fa-coffee" id="tres">About</li>
+                    <li class="tablink icon fa fa-dribbble" id="three"> Champ's Way</li>
                   </a>
                   <a href="#t4">
-                    <li class="icon fa fa-dribbble" id="cuatro"> Champ's Way</li>
-                  </a>
-                  <a href="#t5">
-                    <li class="icon fa fa-dribbble" id="cintro"> Contact</li>
+                    <li class="tablink icon fa fa-dribbble" id="four">Contact</li>
                   </a>
                 </ul>
-              </div>
-
-              <div class="page" id="p1">
-                <div class="page-fix">
-                  <div class=""><h1 class="title">Yele Champion</h1></div>
-
-                  <div class="content intro">
-                    <p style="padding-right: 200px;">She hands me a security pass that has “visitor” very firmly stamped on the front. I can’t help my smirk. Surely it’s obvious that I’m just visiting. I don’t fit in here at all. Nothing changes. I inwardly sigh. Thanking her, I walk over to the bank of elevators and past the two security menwho are both far more smartly dressed than I am in their well-cut black suits.The elevator whisks me at terminal velocity to the twentieth floor. The doors slide open, and I’m in another large lobby—again all glass, steel, and white sandstone. I’m confronted by another desk of sandstone and another young blonde woman, this time dressed impeccably in black and white, who rises to greet me.</p>
-
-                  </div>
-                  <div class="flex-container">
-
-                      <div class="flex-item one">
-                        <h2>Philosophy</h2>
-                        <p>She hands me a security pass that has “visitor” very firmly stamped on the front. I can’t help my smirk. Surely it’s obvious that I’m just visiting. I don’t fit in here at all. Nothing changes. I inwardly sigh. Thanking her, I walk over to the bank of elevators and past the two security menwho are both far more smartly dressed than I am in their well-cut black suits.The elevator whisks me at terminal velocity to the twentieth floor. The doors slide open, and I’m in another large lobby—again all glass, steel, and white sandstone. I’m confronted by another desk of sandstone and another young blonde woman, this time dressed impeccably in black and white, who rises to greet me.</p>
-                      </div>
-                      <div class="flex-item two">
-                        <h2>Philosophy</h2>
-                        <p>She hands me a security pass that has “visitor” very firmly stamped on the front. I can’t help my smirk. Surely it’s obvious that I’m just visiting. I don’t fit in here at all. Nothing changes. I inwardly sigh. Thanking her, I walk over to the bank of elevators and past the two security menwho are both far more smartly dressed than I am in their well-cut black suits.The elevator whisks me at terminal velocity to the twentieth floor. The doors slide open, and I’m in another large lobby—again all glass, steel, and white sandstone. I’m confronted by another desk of sandstone and another young blonde woman, this time dressed impeccably in black and white, who rises to greet me.</p>
-                      </div>
-                      <div class="flex-item three">
-                        <h2>Philosophy</h2>
-                        <p>She hands me a security pass that has “visitor” very firmly stamped on the front. I can’t help my smirk. Surely it’s obvious that I’m just visiting. I don’t fit in here at all. Nothing changes. I inwardly sigh. Thanking her, I walk over to the bank of elevators and past the two security menwho are both far more smartly dressed than I am in their well-cut black suits.The elevator whisks me at terminal velocity to the twentieth floor. The doors slide open, and I’m in another large lobby—again all glass, steel, and white sandstone. I’m confronted by another desk of sandstone and another young blonde woman, this time dressed impeccably in black and white, who rises to greet me.</p>
-                      </div>
-
-                      <div class="flex-item four">
-                        <h2>Philosophy</h2>
-                        <p>She hands me a security pass that has “visitor” very firmly stamped on the front. I can’t help my smirk. Surely it’s obvious that I’m just visiting. I don’t fit in here at all. Nothing changes. I inwardly sigh. Thanking her, I walk over to the bank of elevators and past the two security menwho are both far more smartly dressed than I am in their well-cut black suits.The elevator whisks me at terminal velocity to the twentieth floor. The doors slide open, and I’m in another large lobby—again all glass, steel, and white sandstone. I’m confronted by another desk of sandstone and another young blonde woman, this time dressed impeccably in black and white, who rises to greet me.</p>
-                      </div>
-                  </div>
+                <div class="social">
+                  <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div>
+                  <div><a href="https://twitter.com/championyeley" class="twitter-follow-button" data-show-count="false">Follow @championyeley</a></div>
                 </div>
               </div>
-
-
-              <div class="page" id="p2">
-                <div class="icon"><span class="title">Photo Speak</span>
+            </div>
+            <div class="page container-fluid" id="p1" style="margin:auto">
+              <div class="page-fix">
+                <div class="row" style="min-height: 300px"   >
+                  <div class=" col-4" >
+                    <div class="masthead" >
+                      <h1 class="h1 shadow">Yele Champion</h1>
+                    </div>
+                    <div class="intro">
+                      <q class="quoth" cite="nosite" style="text-shadow: 1px 1px 2px black">
+                                  <span>"</span>
+                                  <span class="quote" ></span>
+                                  <span>_</span>
+                                </q>
+                    </div>
+                  </div>
+                  <div class="nav-secondary col-6">
+                    <div class="">
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">Fight Club</h4>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Join the fight club</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <h2 style="display: block">Upcoming Events</h2>
+                        <table class="table table-sm table-inverse">
+                            <thead>
+                              <tr>
+                                <th>#</th>
+                                <th>Event</th>
+                                <th>Location</th>
+                                <th>Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Fight Club 21</td>
+                                <td>Lagos</td>
+                                <td><input class="form-input " readonly type="date"  value="2017-09-23"  ></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td><input class="form-input "  type="date" name="" value="2017-09-23" id="" readonly/></td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td >Taekwondo Open Championship</td>
+                                <td >Southampton, England</td>
+                                <td><input class="form-input " type="date"  value="2017-09-23" id="" readonly/></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 30px;">
+                    <div>
+                        <span><a href="">Resume</a></span>
+                        <span><a href="">Style & Philosophy</a></span>
+                        <span><a href="">Youtube</a></span>
+                        <span><a href="">Twitter</a></span>
+                      </div>
                 </div>
               </div>
-
-              <div class="page" id="p3">
-                <div class="icon"><span class="title">About me</span></div>
+            </div>
+            <footer>
+              <div>Made with love by Akinwale Alexander</div>
+            </footer>
+            <div class="page container-fluid" id="p2">
+              <div>
+                <h2 class="shadow hl2">About me</h2>
               </div>
-
-              <div class="page" id="p4">
-                <div class="icon"><span class="title">The Champs Way</span></div>
-                <p>The Champs Way The Champs Way The Champs Way<p>
+              <div>
+                <h3 class="h3">Trainer</h3>
+                <p>I am, a soldier, a self-motivated person who is lucky to be doing what I love. It’s that passion that drives
+                  me whether I am called to fight for my country; for my honour, or to train a horde of athletes in martial
+                  arts; It’s the same passion that makes friends and colleagues to say that I am a spirited fighter who would
+                  step up to fight any time As they say, “ you lose some and wind some, I have fought many times, I have
+                  won many fights and lost a few. My goal is to engrave my footprint in the book of martial arts history
+                  globally.
+                </p>
+                <h3 class="h3">Human</h3>
+                <p>I have a relentless faith in humanity. In spite of it all, I believe we have the capacity to heal our wounds
+                </p>
+                <h3 class="h3">Champion</h3>
+                <ul>
+                  <li> 6x National Champion Taekwondo</li>
+                  <li> 5x National Champion Kickboxing</li>
+                  <li> 3x National Champion in Kung Fu/Wushu</li>
+                  <li> Current African African Kickboxing Champion</li>
+                  <li> Current Africa Kung Fu/Wushu Champion (71kg)</li>
+                  <li> Current Africa Kickboxing Champion (71kg)</li>
+                </ul>
               </div>
-              <div class="page" id="p5">
-                <div class="icon"><span class="title">Contact</span></div>
+            </div>
+            <div class="page container-fluid" id="p3">
+              <div>
+                <h2 class="shadow hl2">The Champs Way</h2>
               </div>
-
-            </section>
-          </div>
-
+              <p>The Champs Way The Champs Way The Champs Way
+                <p>
+            </div>
+            <div class="page container-fluid mx-auto" id="p4">
+              <div>
+                <h2 class="shadow hl2">Contact</h2>
+              </div>
+              <div class="container row" style=" margin:auto">
+                <div>
+                  <span>
+                    Your thoughts, feedbacks, goodwill messages, and strategic alliance is very much welcome. 
+                    Drop me a message here and you shall recieve a reply soonest.
+                  </span>
+                </div>
+                <div class="container col-6">
+                  <form class="contact">
+                    <div class="form-group row">
+                      <input type="text" class="form-control" id="fullname" placeholder="Type your name here">
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" id="subject" placeholder="Type the subject here">
+                    </div>
+                    <div class="form-group row">
+                      <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group row">
+                      <textarea class="form-control" placeholder="Type your message here" name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group row">
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-6">
+                  <div class="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.588112996328!2d3.3602295141055807!3d6.573552724404786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9273f88b9f1b%3A0xcf2c41b39cd426fd!2sIkeja+Military+Cantonment!5e0!3m2!1sen!2sng!4v1506277006411"
+                      width="300" height="250" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                  </div>
+                  <address class="well">
+                    <strong>Twitter, Inc.</strong><br> 1355 Market St, Suite 900<br> San Francisco, CA 94103<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                  </address>
+                  <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">first.last@example.com</a>
+                  </address>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
   </div>
 </body>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script> -->
-<script src="public/jquery-3.2.1.min.js"></script>
-<script src="public/jquery-3.2.1.min.js"></script>
+<script async src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script src="public/script/bootstrap.min.js"></script>
 <script src="./script/script.js" charset="utf-8"></script>
+<script>
+  function initMap() {
+    var uluru = {
+      lat: -25.363,
+      lng: 131.044
+    };
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4rwm3QYf8UN94XVcTYdNHUlEsxVMYjBQ&callback=initMap">
+</script>
+<script async src="https://apis.google.com/js/platform.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </html>
