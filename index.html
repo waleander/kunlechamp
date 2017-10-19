@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="/style/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
-  <link rel="stylesheet" href="/style/jquery-ui-min.css">
   <script src="script/jquery-3.2.1.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet">
   <title>Way of a champ</title>
@@ -46,28 +46,19 @@
                 </ul>
                 <div class="social">
                   <div class="g-ytsubscribe" data-channel="GoogleDevelopers" data-layout="default" data-count="default"></div>
-                  <div><a href="https://twitter.com/championyeley" class="twitter-follow-button" data-show-count="false">Follow @championyeley</a></div>
+                  <div>
+                    <a href="https://twitter.com/championyeley" class="twitter-follow-button" data-show-count="false">Follow @championyeley</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="page container-fluid" id="p1" style="margin:auto">
               <div class="page-fix">
-                <div class="row" style="min-height: 300px"   >
-                  <div class=" col-4" >
-                    <div class="masthead" >
-                      <h1 class="h1 shadow">Yele Champion</h1>
-                    </div>
-                    <div class="intro">
-                      <q class="quoth" cite="nosite" style="text-shadow: 1px 1px 2px black">
-                                  <span>"</span>
-                                  <span class="quote" ></span>
-                                  <span>_</span>
-                                </q>
-                    </div>
-                  </div>
+                <div class="row" style="min-height: 230px">
+
                   <div class="nav-secondary col-6">
                     <div class="">
-                      <div class="card">
+                      <div class="card fight-club">
                         <div class="card-body">
                           <h4 class="card-title">Fight Club</h4>
                           <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -76,74 +67,203 @@
                       </div>
                     </div>
                   </div>
-                  
-                  
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <h2 style="display: block">Upcoming Events</h2>
-                        <table class="table table-sm table-inverse">
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>Event</th>
-                                <th>Location</th>
-                                <th>Date</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Fight Club 21</td>
-                                <td>Lagos</td>
-                                <td><input class="form-input " readonly type="date"  value="2017-09-23"  ></td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td><input class="form-input "  type="date" name="" value="2017-09-23" id="" readonly/></td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td >Taekwondo Open Championship</td>
-                                <td >Southampton, England</td>
-                                <td><input class="form-input " type="date"  value="2017-09-23" id="" readonly/></td>
-                              </tr>
-                            </tbody>
-                          </table>
+
+                  <div class=" col-4">
+                    <div class="masthead">
+                      <h1 class="h1 shadow">Yele Champion</h1>
                     </div>
+                    <div class="intro">
+                      <span class="quoth" cite="nosite" style="text-shadow: 1px 1px 2px black">
+                        <span class="quote">
+                          <span style="font-size:3rem; display:inline-block; text-align:center; ">Welcome</span>
+                        </span>
+                        <span id="cursor">&#95;&#95;</span>
+                      </span>
+                    </div>
+                  </div>
+
+
                 </div>
-                <div class="row" style="margin-top: 30px;">
-                    <div>
-                        <span><a href="">Resume</a></span>
-                        <span><a href="">Style & Philosophy</a></span>
-                        <span><a href="">Youtube</a></span>
-                        <span><a href="">Twitter</a></span>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <h2 style="display: block">Upcoming Events</h2>
+                      <table class="table table-sm table-inverse">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Event</th>
+                            <th>Location</th>
+                            <th>Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Fight Club 21</td>
+                            <td>Lagos</td>
+                            <td>
+                              <input class="form-input " readonly type="date" value="2017-09-23">
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>
+                              <input class="form-input " type="date" name="" value="2017-09-23" id="" readonly/>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Taekwondo Open Championship</td>
+                            <td>Southampton, England</td>
+                            <td>
+                              <input class="form-input " type="date" value="2017-09-23" id="" readonly/>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+
+                  <div class="container-fluid">
+                    <div class="row" style=" margin-top:40px; margin-left:auto; margin-right: auto;">
+
+                      <button type="button" class="btn btn-outline-primary btn-lg large-button" data-toggle="modal" data-target="#exampleModal" data-whatever="">
+                        <image src="/image/photo--symbol.fw.png" />
+                        <span>Fotoflick</span>
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
+
+                    <button type="button" class="btn btn-outline-primary btn-lg large-button" data-toggle="modal" data-target="#philosophy" data-whatever="">
+                      <image src="/image/phill-head-symbol.png" />
+                      <span>Philosophy</span>
+                    </button>
+                  <div class="modal fade" id="philosophy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-outline-primary btn-lg large-button" data-toggle="modal" data-target="connect" data-whatever="">
+                    <image src="/image/social-symbol.fw.png" />
+                    <span>Connect</span>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-primary btn-lg large-button" data-toggle="modal" data-target="#resume" data-whatever="">
+                    <image src="/image/social-symbol.fw.png" />
+                    <span>View Resume</span>
+                  </button>
+                  <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <footer>
-              <div>Made with love by Akinwale Alexander</div>
-            </footer>
-            <div class="page container-fluid" id="p2">
-              <div>
-                <h2 class="shadow hl2">About me</h2>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>Made with love by Akinwale Alexander</div>
+    </footer>
+
+    <div class="page" id="p2">
+      <div class="p2-content">
+        <div id="accordion" role="tablist">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingOne">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Trainer
+                </a>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                I am, a soldier, a self-motivated person who is lucky to be doing what I love. It’s that passion that drives me whether I
+                am called to fight for my country; for my honour, or to train a horde of athletes in martial arts; It’s the
+                same passion that makes friends and colleagues to say that I am a spirited fighter who would step up to fight
+                any time As they say, “ you lose some and wind some, I have fought many times, I have won many fights and
+                lost a few. My goal is to engrave my footprint in the book of martial arts history globally.
               </div>
-              <div>
-                <h3 class="h3">Trainer</h3>
-                <p>I am, a soldier, a self-motivated person who is lucky to be doing what I love. It’s that passion that drives
-                  me whether I am called to fight for my country; for my honour, or to train a horde of athletes in martial
-                  arts; It’s the same passion that makes friends and colleagues to say that I am a spirited fighter who would
-                  step up to fight any time As they say, “ you lose some and wind some, I have fought many times, I have
-                  won many fights and lost a few. My goal is to engrave my footprint in the book of martial arts history
-                  globally.
-                </p>
-                <h3 class="h3">Human</h3>
-                <p>I have a relentless faith in humanity. In spite of it all, I believe we have the capacity to heal our wounds
-                </p>
-                <h3 class="h3">Champion</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingTwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Human
+                </a>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                I have a relentless faith in humanity. In spite of it all, I believe we have the capacity to heal our wounds
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab" id="headingThree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Champion
+                </a>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
                 <ul>
                   <li> 6x National Champion Taekwondo</li>
                   <li> 5x National Champion Kickboxing</li>
@@ -154,69 +274,105 @@
                 </ul>
               </div>
             </div>
-            <div class="page container-fluid" id="p3">
-              <div>
-                <h2 class="shadow hl2">The Champs Way</h2>
-              </div>
-              <p>The Champs Way The Champs Way The Champs Way
-                <p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="page container-fluid" id="p3">
+      <div>
+        <h2 class="shadow hl2">The Champs Way</h2>
+      </div>
+      <p>The Champs Way The Champs Way The Champs Way
+        <p>
+    </div>
+    <div class="page container-fluid mx-auto" id="p4">
+
+      <div class="container row" style=" margin:auto">
+        <div>
+          <span>
+            Your thoughts, feedbacks, goodwill messages, and strategic alliance is very much welcome. Drop me a message here and you
+            shall recieve a reply soonest.
+          </span>
+        </div>
+        <div class="container col-6">
+          <form class="contact">
+            <div class="form-group row">
+              <input type="text" class="form-control" id="fullname" placeholder="Type your name here">
             </div>
-            <div class="page container-fluid mx-auto" id="p4">
-              <div>
-                <h2 class="shadow hl2">Contact</h2>
-              </div>
-              <div class="container row" style=" margin:auto">
-                <div>
-                  <span>
-                    Your thoughts, feedbacks, goodwill messages, and strategic alliance is very much welcome. 
-                    Drop me a message here and you shall recieve a reply soonest.
-                  </span>
-                </div>
-                <div class="container col-6">
-                  <form class="contact">
-                    <div class="form-group row">
-                      <input type="text" class="form-control" id="fullname" placeholder="Type your name here">
-                    </div>
-                    <div class="form-group row">
-                      <input type="text" class="form-control" id="subject" placeholder="Type the subject here">
-                    </div>
-                    <div class="form-group row">
-                      <input type="text" class="form-control" id="email" placeholder="Email">
-                    </div>
-                    <div class="form-group row">
-                      <textarea class="form-control" placeholder="Type your message here" name="message" id="message" cols="30" rows="10"></textarea>
-                    </div>
-                    <div class="form-group row">
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-6">
-                  <div class="">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.588112996328!2d3.3602295141055807!3d6.573552724404786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9273f88b9f1b%3A0xcf2c41b39cd426fd!2sIkeja+Military+Cantonment!5e0!3m2!1sen!2sng!4v1506277006411"
-                      width="300" height="250" frameborder="0" style="border:0" allowfullscreen>
-                    </iframe>
-                  </div>
-                  <address class="well">
-                    <strong>Twitter, Inc.</strong><br> 1355 Market St, Suite 900<br> San Francisco, CA 94103<br>
-                    <abbr title="Phone">P:</abbr> (123) 456-7890
-                  </address>
-                  <address>
-                    <strong>Full Name</strong><br>
-                    <a href="mailto:#">first.last@example.com</a>
-                  </address>
-                </div>
-              </div>
+            <div class="form-group row">
+              <input type="text" class="form-control" id="subject" placeholder="Type the subject here">
             </div>
-          </section>
+            <div class="form-group row">
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group row">
+              <textarea class="form-control" placeholder="Type your message here" name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group row">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <div class="">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.588112996328!2d3.3602295141055807!3d6.573552724404786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9273f88b9f1b%3A0xcf2c41b39cd426fd!2sIkeja+Military+Cantonment!5e0!3m2!1sen!2sng!4v1506277006411"
+              width="300" height="250" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+          <address class="well">
+            <strong>Twitter, Inc.</strong>
+            <br> 1355 Market St, Suite 900
+            <br> San Francisco, CA 94103
+            <br>
+            <abbr title="Phone">P:</abbr> (123) 456-7890
+          </address>
+          <address>
+            <strong>Full Name</strong>
+            <br>
+            <a href="mailto:#">first.last@example.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+  </div>
+  </div>
+  </div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- <script  async src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <!-- <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script> -->
 </body>
 <script async src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-<script src="public/script/bootstrap.min.js"></script>
-<script src="./script/script.js" charset="utf-8"></script>
+<script async src="./script/bootstrap.min.js"></script>
+<script async src="./script/script.js" charset="utf-8"></script>
 <script>
   function initMap() {
     var uluru = {
