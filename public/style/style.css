@@ -1,6 +1,7 @@
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	border-right: 2px solid white;
 }
 
 
@@ -15,7 +16,7 @@ section,
 .page {
 	font-family: 'Roboto Condensed', sans-serif;
 	height: 100%; 
-	height: 100%;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
@@ -39,7 +40,7 @@ footer {
 	width: 85%;
 	height: 10%;
 	position: fixed;
-	top: 90%;
+	bottom: -5%;
 	margin-left: 15%;
 	z-index: 200;
 	color: #ffe484;
@@ -54,6 +55,10 @@ ul li.tablink {
 	padding: 4px 4px 4px 15px;
 }
 
+button.card {
+	min-width: 200px;
+}
+
 ul.sidebar-link a   {
 	font-weight: 600;
 	text-decoration: none;
@@ -61,6 +66,10 @@ ul.sidebar-link a   {
 
 .shadow {
 	text-shadow: 3px 3px 6px black;
+}
+
+.card-header {
+	background-color: rgb(8, 40, 107);
 }
 
 .hl2 {
@@ -71,32 +80,51 @@ ul.sidebar-link a   {
 	font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.card {
-	display: inline-block;
-	background-color: transparent;
-	margin-left: 20px;
+
+.fight-club .card-body {
+	background-image: url('/image/main-champion.png');
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+.card-custom {
+	background: #08286b;
+}
+
+.card-body {
+	background: #060621;
+	border-color: none;
+}
+
+.card-header span {
+	color: #ffe484;
+}
+
+.main {
+	/* margin-bottom: 70px; */
 }
 .page {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	padding: 40px 0 0 20px;
 	overflow: scroll;
 	border-bottom: 20px outset gray;
 	overflow-x: hidden;
-	background: url("/image/main-champion.png");
-	background-size: 400px;
-	background-repeat: no-repeat;
-	background-position: right;
-	background-blend-mode: soft-light;
 }
 
 .credit {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
 	font-size: 10px;
+}
+
+
+.quote {
+	font-size: 20px;
 }
 
 .credit a {
@@ -143,9 +171,8 @@ ul.sidebar-link a   {
 	z-index: 9;
 }
 
-.table{
-	border-radius: 10px;
-}
+
+
 
 .table tbody tr:hover {
 	background: #08286b;
@@ -185,14 +212,22 @@ ul.sidebar-link a   {
 	filter: grayscale(80%) opacity(10%);
 }
 
+
+
 .social {
 	position: fixed;
 	left: 0;
 	bottom: 40px;
+	z-index: 100;
 }
 
 .no-js #loader {
 	display: none;
+}
+
+.large-button {
+	width: 200px;
+	height: 200px;
 }
 
 .js #loader {
@@ -236,14 +271,14 @@ section div.side-nav {
 
 .page-fix {
 	margin-left: 200px;
-	position: fixed;
+	position: relative;
 	width: 100%;
 }
 
 
 
 div.masthead {
-	background: red;
+	background: #08286b;
 	color: white;
 	display: inline-block;
 	width: 400px;
@@ -274,6 +309,23 @@ ul .active {
 	position: relative;
 } 
 
+h3.h3 {
+    background: #08286b;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.p2-content {
+	background: #000c18;
+	padding: 20px;
+	padding-right: 80px;
+	max-width: 1000px;
+}
+
+.card{
+	border: none;
+}
+
 
 .nav-secondary ul li {
 	display: inline-block;
@@ -290,8 +342,17 @@ ul .active {
 	color: white;
 }
 
+.card-header img {
+	color: #ffe484;
+}
+
 #container {
 	width: 100%;
+}
+
+span#cursor {
+	font-size: 20px;
+	display: inline-block;
 }
 
 #p1 {
@@ -303,6 +364,7 @@ ul .active {
 #p2 {
 	left: 100%;
 	background: #000c18;
+
 }
 
 #p3 {
@@ -342,6 +404,10 @@ ul .active {
 
 #t5:target .page#p5 {
 	transform: translateX(-385%);
+}
+
+#fotoflick {
+	z-index: 200;
 }
 
 #t2:target .page#p1,
